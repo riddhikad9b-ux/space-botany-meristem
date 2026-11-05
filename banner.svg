@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" font-family="'Segoe UI', Helvetica, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050b1f"/><stop offset="0.6" stop-color="#0b1a3a"/><stop offset="1" stop-color="#102a4a"/>
+    </linearGradient>
+    <style>
+      .t1 { fill: #eef4ff; font-size: 36px; font-weight: 700; }
+      .t2 { fill: #9be7c4; font-size: 19px; font-weight: 500; }
+      .t3 { fill: #8fa8cf; font-size: 14px; letter-spacing: 1.5px; }
+      .tag { fill: #050b1f; font-size: 13px; font-weight: 700; }
+      .ax { fill: #c7d6ef; font-size: 12px; }
+      .star { animation: tw 3s ease-in-out infinite; }
+      @keyframes tw { 0%,100% { opacity: .2; } 50% { opacity: 1; } }
+      .float { animation: fl 6s ease-in-out infinite; }
+      @keyframes fl { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+      .orbit { transform-origin: 1075px 150px; animation: sp 18s linear infinite; }
+      @keyframes sp { to { transform: rotate(360deg); } }
+    </style>
+  </defs>
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <g fill="#fff">
+    <circle class="star" cx="600" cy="30" r="1.4"/><circle class="star" cx="930" cy="40" r="1.2" style="animation-delay:.8s"/>
+    <circle class="star" cx="1170" cy="260" r="1.5" style="animation-delay:1.6s"/><circle class="star" cx="560" cy="270" r="1" style="animation-delay:2.2s"/>
+    <circle class="star" cx="1150" cy="60" r="1.1" style="animation-delay:.3s"/>
+  </g>
+  <text x="48" y="88" class="t3">SPACE BOTANY · NASA OSDR RE-ANALYSIS</text>
+  <text x="48" y="136" class="t1">Meristem genes in spaceflight</text>
+  <text x="48" y="172" class="t2">Do plant stem-cell regulators change on the ISS?</text>
+  <g transform="translate(48,200)">
+    <rect width="200" height="30" rx="15" fill="#8fb8ff"/><text x="100" y="20" text-anchor="middle" class="tag">8 experiments · 38 contrasts</text>
+    <rect x="212" width="200" height="30" rx="15" fill="#9be7c4"/><text x="312" y="20" text-anchor="middle" class="tag">no consistent response</text>
+    <rect x="424" width="160" height="30" rx="15" fill="#ffd27f"/><text x="504" y="20" text-anchor="middle" class="tag">auxin: light lead</text>
+  </g>
+  <g transform="translate(652,62)">
+    <rect width="290" height="176" rx="12" fill="#fff" fill-opacity="0.05" stroke="#8fa8cf" stroke-opacity="0.35"/>
+    <text x="145" y="24" text-anchor="middle" class="ax">independent experiments responding (of 8)</text>
+    <g class="ax">
+      <text x="14" y="58">positive ctrl</text><rect x="110" y="46" width="22" height="16" rx="3" fill="#8fb8ff"/><text x="139" y="58">1</text>
+      <text x="14" y="94">root niche</text><rect x="110" y="82" width="22" height="16" rx="3" fill="#9be7c4"/><text x="139" y="94">1</text>
+      <text x="14" y="130">shoot SAM</text><rect x="110" y="118" width="2" height="16" fill="#9be7c4"/><text x="118" y="130">0</text>
+      <text x="14" y="166">auxin</text><rect x="110" y="154" width="22" height="16" rx="3" fill="#ffd27f"/><text x="139" y="166">1</text>
+    </g>
+  </g>
+  <circle cx="1075" cy="150" r="95" fill="none" stroke="#8fa8cf" stroke-opacity="0.25" stroke-dasharray="4 7"/>
+  <g class="orbit"><rect x="1162" y="143" width="22" height="10" rx="2" fill="#c7d6ef"/><rect x="1150" y="146" width="10" height="4" fill="#8fb8ff"/><rect x="1186" y="146" width="10" height="4" fill="#8fb8ff"/></g>
+  <g class="float">
+    <path d="M1075,215 L1075,150" stroke="#9be7c4" stroke-width="4" stroke-linecap="round"/>
+    <path d="M1075,170 C1050,160 1035,140 1040,120 C1058,128 1070,140 1075,160 Z" fill="#9be7c4"/>
+    <path d="M1075,160 C1100,148 1115,128 1110,108 C1092,116 1080,130 1075,150 Z" fill="#b5f0d4"/>
+    <circle cx="1075" cy="148" r="5" fill="#ffd27f"/>
+    <path d="M1075,215 C1068,228 1060,236 1050,242 M1075,215 C1082,230 1092,238 1102,244 M1075,215 L1076,246" stroke="#c9a94a" stroke-width="2" fill="none"/>
+  </g>
+</svg>
